@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Feed Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Image and text -->
+      <nav class="h-50 navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"><i class="fab fa-instagram p-2" width="100"></i><img src="https://cdn.pixabay.com/photo/2016/08/15/01/29/instagram-1594387_960_720.png" width="100"></img></a>
+        <form class="form-inline">
+          <button type="button" class="btn btn-success btn-sm mr-2" data-toggle="modal" data-target="#myModal">Create a new post</button>
+
+          <!-- Default dropleft button -->
+          <div class="btn-group dropleft">
+            <button type="button" class="btn  bg-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </button>
+
+              <div class="dropdown-menu"> <!--dropdown links-->
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div> <!--dropdown links-->
+
+          </div> <!--dropdown-->
+        </form>
+      </nav>
+
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary">Cancel</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--botones navegacion entre index y second-->
+        <div class="text-center py-4">
+            <a type="button" class="btn btn-outline-secondary mr-2" href="index.html">
+                <i class="fas fa-th"></i>
+            </a>
+            <a type="button" class="btn btn-outline-secondary" href="second.html">
+                <i class="fas fa-square"></i>
+            </a>
+        </div>
+
+
+     <content>
+       <div class="row">
+         <div class="col-4">
+           <img src="puppy.jpg"></img>
+         </div>
+         <div class="col-4">
+           <img src="puppy-skate.jpg"></img>
+         </div>
+         <div class="col-4">
+           <div class="embed-responsive embed-responsive-4by9">
+            <iframe  allowfullscreen src="https://youtu.be/cBW9m8LyXPs" class="embed-responsive"></iframe>
+           </div>
+        </div>
+         <div class="col-4">
+           <img src="paparazzi.jpg"></img>
+         </div>
+         <div class="col-4">
+           <img src="manager.jpg"></img>
+         </div>
+         <div class="col-4">
+           <div class="embed-responsive embed-responsive-4by9">
+            <iframe  allowfullscreen src="https://youtu.be/cBW9m8LyXPs" class="embed-responsive"></iframe>
+           </div>
+         </div>
+         <div class="col-4">
+           <img src="tecnologia.jpg"></img>
+         </div>
+         <div class="col-4">
+           <img src="chapes.jpg"></img>
+         </div>
+
+       </div>
+
+     </content>
+    </div> <!--container web-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+  </body>
+</html>
